@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="preview">
+      <iframe id="preview" frameborder="0"></iframe>
+    </div>
+    <div class="tabs">
+      <button class="tab" onclick="changeTab('html')" data-language="html">HTML</button>
+      <button class="tab" onclick="changeTab('css')" data-language="css">CSS</button>
+      <button class="tab" onclick="changeTab('js')" data-language="js">JS</button>
+    </div>
+    <div class="editor">
+      <textarea id="htmlCode" class="code" placeholder="Type HTML code here..."></textarea>
+      <textarea id="cssCode" class="code" placeholder="Type CSS code here..."></textarea>
+      <textarea id="jsCode" class="code" placeholder="Type JavaScript code here..."></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
